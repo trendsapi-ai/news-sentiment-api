@@ -2,13 +2,12 @@
 
 News tone over time via the Trends API. Sentiment history and growth without scraping outlets.
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![PyPI](https://img.shields.io/pypi/v/trendsapi-news-sentiment.svg)](https://pypi.org/project/trendsapi-news-sentiment/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/trendsapi-news-sentiment.svg)](https://pypi.org/project/trendsapi-news-sentiment/)
 
 Key: [trendsapi.ai/#get-key](https://trendsapi.ai/#get-key). Full contract: [trendsapi-ai/trendsapi](https://github.com/trendsapi-ai/trendsapi).
 
 ## Install
-
-### Python
 
 ```bash
 pip install trendsapi-news-sentiment
@@ -21,6 +20,8 @@ client = TrendsAPI()  # TRENDSAPI_KEY
 series = client.get_time_series("nvidia")
 growth = client.get_growth("nvidia", percent_growth=["12M"])
 ```
+
+Keyword helpers default to `source: "news sentiment"`. Override `source=` for any other platform. Official full client: [`trendsapi`](https://pypi.org/project/trendsapi/).
 
 ## Call
 
@@ -46,7 +47,7 @@ Mention count is `news-trends-api` (`source: news volume`).
 
 No per-article labels, no outlet breakdown.
 
-Site: [https://trendsapi.ai/trends/news-sentiment](https://trendsapi.ai/trends/news-sentiment).
+Site: [https://trendsapi.ai/trends/news-sentiment](https://trendsapi.ai/trends/news-sentiment). GitHub: [trendsapi-ai/news-sentiment-api](https://github.com/trendsapi-ai/news-sentiment-api).
 
 ## License
 
